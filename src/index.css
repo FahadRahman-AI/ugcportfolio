@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-white: #FFFFFF;
+  --color-off-white: #FAFAFA;
+  --color-light-gray: #F5F5F5;
+  --color-medium-gray: #666666;
+  --color-dark-gray: #333333;
+  --color-black: #0A0A0A;
+  --color-terracotta: #D2572F;
+  
+  --font-header: "Space Grotesk", sans-serif;
+  --font-body: Inter, sans-serif;
+}
+
+:root {
+  --color-white: #FFFFFF;
+  --color-off-white: #FAFAFA;
+  --color-light-gray: #F5F5F5;
+  --color-medium-gray: #666666;
+  --color-dark-gray: #333333;
+  --color-black: #0A0A0A;
+  --color-terracotta: #D2572F;
+  
+  --font-header: "Space Grotesk", sans-serif;
+  --font-body: Inter, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    color: var(--color-black);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-4 bg-black text-white px-10 py-5 uppercase tracking-widest text-xs font-normal transition-all duration-300 cursor-pointer;
+    border-radius: 60px;
+  }
+  
+  .btn-primary:hover {
+    background: var(--color-terracotta);
+    transform: scale(1.02);
+  }
+  
+  .btn-secondary {
+    @apply w-full bg-black text-white px-5 py-4 uppercase tracking-widest text-xs font-normal transition-all duration-300 cursor-pointer;
+    border-radius: 60px;
+  }
+  
+  .btn-secondary:hover {
+    background: var(--color-terracotta);
+  }
+  
+  .section-container {
+    @apply max-w-[1400px] mx-auto px-20 md:px-6;
+  }
+  
+  .section-spacing {
+    @apply py-40 md:py-20;
+  }
+  
+  /* Placeholder styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-medium-gray);
+    opacity: 0.6;
+  }
+}

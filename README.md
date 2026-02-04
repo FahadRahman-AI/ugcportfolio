@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UGC Creator Portfolio
+
+A stunning, honest portfolio website for UGC creators built with React, Vite, Tailwind CSS, and Framer Motion.
+
+## Features
+
+- **Honest & Authentic**: No fake metrics or made-up brand logos
+- **Cinematic Design**: Beautiful animations and smooth transitions
+- **Fully Responsive**: Works perfectly on all devices
+- **Modern Stack**: React + Vite for fast development and performance
+
+## Tech Stack
+
+- **React** + **TypeScript**
+- **Vite** (build tool)
+- **Tailwind CSS** (styling)
+- **Framer Motion** (animations)
+- **Google Fonts** (Playfair Display + Inter)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Start development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Build for production:
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customization
 
-## Learn More
+### Update Your Information
 
-To learn more about Next.js, take a look at the following resources:
+1. **Hero Section** (`src/components/Hero.tsx`):
+   - Change "Your Name" to your actual name
+   - Update the subheading
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Philosophy Section** (`src/components/Philosophy.tsx`):
+   - Update your unique angle/background
+   - Customize your philosophy text
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Portfolio** (`src/components/Portfolio.tsx`):
+   - Replace portfolio items with your actual work
+   - Update video/thumbnail paths
 
-## Deploy on Vercel
+4. **Skills & Setup** (`src/components/Skills.tsx`):
+   - Update your experience and equipment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Pricing** (`src/components/WorkingTogether.tsx`):
+   - Adjust package prices and features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+6. **Contact** (`src/components/Contact.tsx`):
+   - Update social media links
+   - Configure form submission (Formspree, Web3Forms, etc.)
+
+7. **Footer** (`src/components/Footer.tsx`):
+   - Update your name and location
+
+### Add Your Media
+
+Place your files in the `public` folder:
+- Hero background video: `public/hero-background.mp4`
+- Portfolio videos: `public/portfolio-1.mp4`, etc.
+- Portfolio thumbnails: `public/portfolio-1.jpg`, etc.
+
+## Color Palette
+
+- **Cream**: `#FAF7F2`
+- **Terracotta**: `#E07A5F`
+- **Charcoal**: `#1A1A1A`
+- **Warm Gray**: `#6B6B6B`
+- **Gold**: `#D4AF37` (accent only)
+
+## Project Structure
+
+```
+src/
+  components/
+    Hero.tsx
+    Philosophy.tsx
+    Portfolio.tsx
+    Skills.tsx
+    WorkingTogether.tsx
+    Contact.tsx
+    Footer.tsx
+  App.tsx
+  main.tsx
+  index.css
+```
+
+## License
+
+Private and proprietary.
