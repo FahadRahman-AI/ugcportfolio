@@ -22,11 +22,10 @@ import { Link } from 'react-router-dom'
 // That's it! Save the file and your images will appear.
 // ============================================
 
- 
- import sonyA7iv from '../assets/gear/sony-a7iv.jpg'
- import iphone13 from '../assets/gear/iphone-13.jpg'
- import djiMic2 from '../assets/gear/dji-mic-2.jpg'
- import djiRonin from '../assets/gear/dji-ronin-rs3-mini.jpg'
+import sonyA7iv from '../assets/gear/sony-a7iv.jpg'
+import iphone13 from '../assets/gear/iphone-13.jpg'
+import djiMic2 from '../assets/gear/dji-mic-2.jpg'
+import djiRonin from '../assets/gear/dji-ronin-rs3-mini.jpg'
 
 interface GearItem {
   id: number
