@@ -85,7 +85,7 @@ export const portfolioItems: PortfolioItem[] = [
     type: 'photo',
     category: 'Photography',
     title: 'Urban showcase',
-    description: 'Professional product photography that highlights key features and aesthetic.',
+    description: 'Capturing the energy and character of urban environments through cinematic composition and lighting.',
     source: null, // Replace with: project2Photo
     thumbnail: null, // Same as source for photos
     featured: true
@@ -125,7 +125,7 @@ export const portfolioItems: PortfolioItem[] = [
     type: 'photo',
     category: 'Photography',
     title: 'Outdoor captures',
-    description: 'Seamless product placement in real-life scenarios.',
+    description: 'Natural landscapes and outdoor scenes captured with cinematic precision and attention to detail.',
     source: null, // Replace with: project6Photo
     thumbnail: null,
     featured: false
@@ -155,7 +155,7 @@ export const portfolioItems: PortfolioItem[] = [
     type: 'photo',
     category: 'Photography',
     title: 'Cinematic nightlife',
-    description: 'A glimpse into the creative process and production.',
+    description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
     source: null, // Replace with: project9Photo
     thumbnail: null, // Same as source for photos
     featured: false
@@ -185,7 +185,7 @@ export const portfolioItems: PortfolioItem[] = [
     type: 'photo',
     category: 'Photography',
     title: 'Cinematic nightlife',
-    description: 'Editorial photography with artistic composition.',
+    description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
     source: null, // Replace with: project12Photo
     thumbnail: null,
     featured: false
