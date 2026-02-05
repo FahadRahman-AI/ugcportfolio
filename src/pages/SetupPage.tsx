@@ -244,7 +244,7 @@ const SetupPage = () => {
           </p>
           
           <Link
-            to="/#portfolio"
+            to="/work"
             className="inline-flex items-center gap-4 px-10 py-5 uppercase tracking-widest text-xs font-normal transition-all duration-300 cursor-pointer border-2 border-white text-white hover:bg-white hover:text-black"
             style={{ fontFamily: 'var(--font-body)' }}
           >

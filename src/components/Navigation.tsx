@@ -7,7 +7,7 @@ const Navigation = () => {
   const location = useLocation()
 
   const projectLinks = [
-    { label: 'Sample Work', href: '/#portfolio', isHash: true },
+    { label: 'Work', href: '/work', isHash: false },
     { label: 'About Me', href: '/#about', isHash: true },
     { label: 'Process', href: '/#process', isHash: true },
     { label: 'Packages', href: '/#packages', isHash: true },

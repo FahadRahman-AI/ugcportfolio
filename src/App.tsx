@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import HomePage from './pages/HomePage'
 import SetupPage from './pages/SetupPage'
 import ContactPage from './pages/ContactPage'
+import PortfolioPage from './pages/PortfolioPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/setup" element={<SetupPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/work" element={<PortfolioPage />} />
         </Routes>
       </div>
     </BrowserRouter>
