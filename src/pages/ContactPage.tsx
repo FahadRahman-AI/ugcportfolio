@@ -149,7 +149,7 @@ const ContactPage = () => {
               { 
                 label: 'TikTok', 
                 // REPLACE "yourusername" with your TikTok handle (without @)
-                href: 'https://tiktok.com/@yourusername' 
+                href: 'https://tiktok.com/fahadcaptures' 
               }
             ].map((social, index) => (
               <motion.a
