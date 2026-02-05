@@ -11,12 +11,12 @@ const Footer = () => {
   const socialLinks = [
     { 
       label: 'Instagram', 
-      href: 'https://instagram.com/yourusername', // REPLACE "yourusername" with your Instagram handle
+      href: 'https://instagram.com/the_fahadrahman', // REPLACE with your Instagram handle
       isExternal: true 
     },
     { 
       label: 'TikTok', 
-      href: 'https://tiktok.com/@yourusername', // REPLACE "yourusername" with your TikTok handle
+      href: 'https://tiktok.com/@fahadcaptures', // REPLACE with your TikTok handle
       isExternal: true 
     },
     { 
