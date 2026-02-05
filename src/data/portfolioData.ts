@@ -32,24 +32,16 @@
 // - Aspect ratio: 9:16 (vertical) or 16:9 (horizontal)
 //
 // STEP 3: IMPORT YOUR MEDIA
-// Uncomment and update the imports below:
+// Add your import statements here (after line 60, before the interface):
 //
-// import project1Photo from '../assets/portfolio/photos/project-1.jpg';
-// import project2Video from '../assets/portfolio/videos/project-2.mp4';
-// import project2Thumb from '../assets/portfolio/thumbnails/project-2-thumb.jpg';
+// For Photography section photos:
+// import urbanShowcase from '../assets/portfolio/photos/urban-showcase.jpg';
+// import outdoorCaptures from '../assets/portfolio/photos/outdoor-captures.jpg';
+// import nightlife1 from '../assets/portfolio/photos/nightlife-1.jpg';
+// import nightlife2 from '../assets/portfolio/photos/nightlife-2.jpg';
 //
 // STEP 4: UPDATE THE DATA BELOW
-// Replace null values with your imported media:
-//
-// {
-//   id: 1,
-//   type: 'photo',
-//   category: 'Photography',
-//   title: 'Your Project Name',
-//   description: 'What this project was about',
-//   source: project1Photo, // ← Add imported photo here
-//   thumbnail: project1Photo, // Same as source for photos
-// },
+// Replace null values with your imported media (see examples in the array below)
 //
 // ============================================
 // VIDEO COMPRESSION TIP:
@@ -57,6 +49,12 @@
 // - Preset: "Web" or "Fast 1080p30"
 // - Keep file under 10MB for good web performance
 // ============================================
+
+// ADD YOUR IMPORTS HERE (uncomment and update with your file names):
+// import urbanShowcase from '../assets/portfolio/photos/urban-showcase.jpg'
+// import outdoorCaptures from '../assets/portfolio/photos/outdoor-captures.jpg'
+// import nightlife1 from '../assets/portfolio/photos/nightlife-1.jpg'
+// import nightlife2 from '../assets/portfolio/photos/nightlife-2.jpg'
 
 export interface PortfolioItem {
   id: number
@@ -86,8 +84,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Urban showcase',
     description: 'Capturing the energy and character of urban environments through cinematic composition and lighting.',
-    source: null, // Replace with: project2Photo
-    thumbnail: null, // Same as source for photos
+    source: null, // ← Change to: urbanShowcase (after importing above)
+    thumbnail: null, // ← Change to: urbanShowcase (same as source for photos)
     featured: true
   },
   {
@@ -126,8 +124,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Outdoor captures',
     description: 'Natural landscapes and outdoor scenes captured with cinematic precision and attention to detail.',
-    source: null, // Replace with: project6Photo
-    thumbnail: null,
+    source: null, // ← Change to: outdoorCaptures (after importing above)
+    thumbnail: null, // ← Change to: outdoorCaptures (same as source for photos)
     featured: false
   },
   {
@@ -156,8 +154,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Cinematic nightlife',
     description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
-    source: null, // Replace with: project9Photo
-    thumbnail: null, // Same as source for photos
+    source: null, // ← Change to: nightlife1 (after importing above)
+    thumbnail: null, // ← Change to: nightlife1 (same as source for photos)
     featured: false
   },
   {
@@ -186,8 +184,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Cinematic nightlife',
     description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
-    source: null, // Replace with: project12Photo
-    thumbnail: null,
+    source: null, // ← Change to: nightlife2 (after importing above)
+    thumbnail: null, // ← Change to: nightlife2 (same as source for photos)
     featured: false
   }
 ]
