@@ -1,6 +1,30 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+
+// ============================================
+// USER CUSTOMIZATION REQUIRED:
+// ============================================
+// Replace "yourusername" with your actual handles (without @)
+// ============================================
 
 const Footer = () => {
+  const socialLinks = [
+    { 
+      label: 'Instagram', 
+      href: 'https://instagram.com/yourusername', // REPLACE "yourusername" with your Instagram handle
+      isExternal: true 
+    },
+    { 
+      label: 'TikTok', 
+      href: 'https://tiktok.com/@yourusername', // REPLACE "yourusername" with your TikTok handle
+      isExternal: true 
+    },
+    { 
+      label: 'Email', 
+      href: '/contact', 
+      isExternal: false 
+    },
+  ]
   return (
     <footer className="bg-black text-white py-20 px-20 md:px-6 md:ml-[280px]">
       <div className="max-w-[1400px] mx-auto">
@@ -68,17 +92,35 @@ const Footer = () => {
               Connect
             </h4>
             <ul className="space-y-0">
-              {['Instagram', 'TikTok', 'Email'].map((social) => (
-                <li key={social}>
-                  <a
-                    href="#"
-                    className="block text-sm font-light text-white leading-[2.2] transition-colors duration-300 hover:text-[#D2572F]"
-                    style={{ fontFamily: 'var(--font-body)' }}
-                  >
-                    {social}
-                  </a>
-                </li>
-              ))}
+              {socialLinks.map((link) => {
+                if (link.isExternal) {
+                  return (
+                    <li key={link.label}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-sm font-light text-white leading-[2.2] transition-colors duration-300 hover:text-[#D2572F]"
+                        style={{ fontFamily: 'var(--font-body)' }}
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  )
+                }
+                
+                return (
+                  <li key={link.label}>
+                    <Link
+                      to={link.href}
+                      className="block text-sm font-light text-white leading-[2.2] transition-colors duration-300 hover:text-[#D2572F]"
+                      style={{ fontFamily: 'var(--font-body)' }}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </motion.div>
         </div>

@@ -15,10 +15,27 @@ const Navigation = () => {
     { label: 'My Setup', href: '/setup', isHash: false },
   ]
 
+  // ============================================
+  // USER CUSTOMIZATION REQUIRED:
+  // ============================================
+  // Replace "yourusername" with your actual handles (without @)
+  // ============================================
   const socialLinks = [
-    { label: 'Instagram', href: '#' },
-    { label: 'TikTok', href: '#' },
-    { label: 'Email', href: '#contact' },
+    { 
+      label: 'Instagram', 
+      href: 'https://instagram.com/yourusername', // REPLACE "yourusername" with your Instagram handle
+      isExternal: true 
+    },
+    { 
+      label: 'TikTok', 
+      href: 'https://tiktok.com/@yourusername', // REPLACE "yourusername" with your TikTok handle
+      isExternal: true 
+    },
+    { 
+      label: 'Email', 
+      href: '/contact', 
+      isExternal: false 
+    },
   ]
 
   return (
@@ -96,16 +113,37 @@ const Navigation = () => {
             Socials
           </h2>
           <nav className="space-y-0">
-            {socialLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                {link.label}
-              </a>
-            ))}
+            {socialLinks.map((link) => {
+              const isActive = !link.isExternal && location.pathname === link.href
+              
+              if (link.isExternal) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
+                    style={{ fontFamily: 'var(--font-body)' }}
+                  >
+                    {link.label}
+                  </a>
+                )
+              }
+              
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`block text-[15px] font-normal leading-[2.2] transition-colors duration-200 hover:text-[#D2572F] ${
+                    isActive ? 'text-[#D2572F] border-l-2 border-[#D2572F] pl-3 -ml-3' : 'text-black'
+                  }`}
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
           </nav>
         </div>
 
@@ -218,17 +256,39 @@ const Navigation = () => {
                   Socials
                 </h2>
                 <nav className="space-y-2">
-                  {socialLinks.map((link) => (
-                    <a
-                      key={link.href}
-                      href={link.href}
-                      className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
-                      style={{ fontFamily: 'var(--font-body)' }}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {link.label}
-                    </a>
-                  ))}
+                  {socialLinks.map((link) => {
+                    const isActive = !link.isExternal && location.pathname === link.href
+                    
+                    if (link.isExternal) {
+                      return (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
+                          style={{ fontFamily: 'var(--font-body)' }}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {link.label}
+                        </a>
+                      )
+                    }
+                    
+                    return (
+                      <Link
+                        key={link.href}
+                        to={link.href}
+                        className={`block text-[15px] font-normal leading-[2.2] transition-colors duration-200 hover:text-[#D2572F] ${
+                          isActive ? 'text-[#D2572F]' : 'text-black'
+                        }`}
+                        style={{ fontFamily: 'var(--font-body)' }}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {link.label}
+                      </Link>
+                    )
+                  })}
                 </nav>
               </div>
 
