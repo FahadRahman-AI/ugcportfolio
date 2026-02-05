@@ -133,7 +133,7 @@ const SetupPage = () => {
 
       {/* Gear Grid Section */}
       <section className="bg-white py-32 md:py-20 px-20 md:px-6 md:ml-[280px]">
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 grid-cols-1 gap-16">
+        <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 grid-cols-1 gap-20">
           {gearItems.map((gear, index) => (
             <motion.div
               key={gear.id}
@@ -153,7 +153,7 @@ const SetupPage = () => {
               }}
             >
               {/* Left side - Gear Image */}
-              <div className="w-full md:w-[45%] aspect-square bg-white rounded-2xl p-8 flex items-center justify-center overflow-hidden"
+              <div className="w-full md:w-[55%] h-[500px] md:h-[600px] bg-white rounded-2xl overflow-hidden flex-shrink-0"
                 style={{
                   boxShadow: '0 4px 20px rgba(0,0,0,0.04)'
                 }}
@@ -164,7 +164,7 @@ const SetupPage = () => {
                 <img 
                   src={gear.image} 
                   alt={gear.name}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                   onError={(e) => {
                     // Fallback if image doesn't exist yet
                     e.currentTarget.style.display = 'none'
