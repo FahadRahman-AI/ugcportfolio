@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 const packages = [
   {
     name: "Starter",
-    description: "Perfect for testing UGC",
+    description: "Perfect for testing content styles",
     price: "200",
     features: [
-      "1 UGC video (30-60s)",
+      "1 video (UGC or cinematic style)",
       "2 revisions included",
       "48-hour delivery",
       "Raw file included",
@@ -15,10 +15,10 @@ const packages = [
   },
   {
     name: "Growth",
-    description: "Most popular choice",
+    description: "Versatile content for multiple platforms",
     price: "500",
     features: [
-      "3 UGC videos",
+      "Mix of UGC and brand content",
       "3 revisions each",
       "5-day delivery",
       "Hook variations included",
@@ -27,11 +27,11 @@ const packages = [
   },
   {
     name: "Premium",
-    description: "For established brands",
+    description: "Full creative production",
     price: "Custom",
     features: [
-      "5+ videos/month",
-      "Unlimited revisions",
+      "Cinematic + UGC styles",
+      "Concept development",
       "Priority delivery",
       "Ongoing collaboration",
     ],

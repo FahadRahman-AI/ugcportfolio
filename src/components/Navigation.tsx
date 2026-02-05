@@ -1,15 +1,18 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const location = useLocation()
 
   const projectLinks = [
-    { label: 'Sample Work', href: '#portfolio' },
-    { label: 'About Me', href: '#about' },
-    { label: 'Process', href: '#process' },
-    { label: 'Packages', href: '#packages' },
-    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'Sample Work', href: '/#portfolio', isHash: true },
+    { label: 'About Me', href: '/#about', isHash: true },
+    { label: 'Process', href: '/#process', isHash: true },
+    { label: 'Packages', href: '/#packages', isHash: true },
+    { label: 'Testimonials', href: '/#testimonials', isHash: true },
+    { label: 'My Setup', href: '/setup', isHash: false },
   ]
 
   const socialLinks = [
@@ -23,7 +26,7 @@ const Navigation = () => {
       {/* Desktop Sidebar */}
       <aside className="hidden md:fixed md:left-0 md:top-0 md:w-[280px] md:h-screen md:bg-white md:border-r md:border-[#E5E5E5] md:z-50 md:flex md:flex-col md:p-12">
         {/* Logo/Name */}
-        <a href="#" className="mb-12">
+        <Link to="/" className="mb-12">
           <h1 
             className="text-[28px] font-semibold text-black leading-none"
             style={{ 
@@ -33,14 +36,14 @@ const Navigation = () => {
           >
             Fahad Rahman
           </h1>
-        </a>
+        </Link>
 
         {/* Bio */}
         <p 
           className="text-[15px] font-light text-[#666] leading-[1.7] max-w-[220px] mb-20"
           style={{ fontFamily: 'var(--font-body)' }}
         >
-          UGC creator specializing in authentic, scroll-stopping content for ambitious brands.
+          Cinematic creator specializing in brand content, UGC, and visual storytelling for ambitious brands.
         </p>
 
         {/* Projects Section */}
@@ -52,16 +55,35 @@ const Navigation = () => {
             Projects
           </h2>
           <nav className="space-y-0">
-            {projectLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                {link.label}
-              </a>
-            ))}
+            {projectLinks.map((link) => {
+              const isActive = !link.isHash && location.pathname === link.href
+              
+              if (link.isHash) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
+                    style={{ fontFamily: 'var(--font-body)' }}
+                  >
+                    {link.label}
+                  </a>
+                )
+              }
+              
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`block text-[15px] font-normal leading-[2.2] transition-colors duration-200 hover:text-[#D2572F] ${
+                    isActive ? 'text-[#D2572F] border-l-2 border-[#D2572F] pl-3 -ml-3' : 'text-black'
+                  }`}
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
           </nav>
         </div>
 
@@ -99,7 +121,7 @@ const Navigation = () => {
 
       {/* Mobile Header */}
       <header className="md:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b border-[#E5E5E5] z-50 flex items-center justify-between px-6">
-        <a href="#">
+        <Link to="/">
           <h1 
             className="text-xl font-semibold text-black"
             style={{ 
@@ -109,7 +131,7 @@ const Navigation = () => {
           >
             Fahad Rahman
           </h1>
-        </a>
+        </Link>
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="w-8 h-8 flex flex-col justify-center gap-1.5"
@@ -141,7 +163,7 @@ const Navigation = () => {
                 className="text-[15px] font-light text-[#666] leading-[1.7]"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
-                UGC creator specializing in authentic, scroll-stopping content for ambitious brands.
+                Cinematic creator specializing in brand content, UGC, and visual storytelling for ambitious brands.
               </p>
 
               {/* Projects */}
@@ -153,17 +175,37 @@ const Navigation = () => {
                   Projects
                 </h2>
                 <nav className="space-y-2">
-                  {projectLinks.map((link) => (
-                    <a
-                      key={link.href}
-                      href={link.href}
-                      className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
-                      style={{ fontFamily: 'var(--font-body)' }}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {link.label}
-                    </a>
-                  ))}
+                  {projectLinks.map((link) => {
+                    const isActive = !link.isHash && location.pathname === link.href
+                    
+                    if (link.isHash) {
+                      return (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          className="block text-[15px] font-normal text-black leading-[2.2] transition-colors duration-200 hover:text-[#D2572F]"
+                          style={{ fontFamily: 'var(--font-body)' }}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {link.label}
+                        </a>
+                      )
+                    }
+                    
+                    return (
+                      <Link
+                        key={link.href}
+                        to={link.href}
+                        className={`block text-[15px] font-normal leading-[2.2] transition-colors duration-200 hover:text-[#D2572F] ${
+                          isActive ? 'text-[#D2572F]' : 'text-black'
+                        }`}
+                        style={{ fontFamily: 'var(--font-body)' }}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {link.label}
+                      </Link>
+                    )
+                  })}
                 </nav>
               </div>
 

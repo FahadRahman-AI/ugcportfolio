@@ -22,7 +22,7 @@ const Footer = () => {
               className="text-sm font-light text-white/60"
               style={{ fontFamily: 'var(--font-body)' }}
             >
-              Creating content that converts
+              Creating cinematic stories that move audiences
             </p>
           </motion.div>
 

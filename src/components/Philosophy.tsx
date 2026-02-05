@@ -4,18 +4,18 @@ const Philosophy = () => {
   const services = [
     {
       number: "01",
-      title: "Product Reviews",
-      description: "Authentic reviews that highlight real benefits and build trust with your audience."
+      title: "Brand Content",
+      description: "Cinematic videos that showcase your brand story with professional production quality and emotional impact."
     },
     {
       number: "02",
-      title: "Unboxing Videos",
-      description: "First-impression content that captures genuine excitement and showcases your product beautifully."
+      title: "UGC & Social",
+      description: "Authentic, scroll-stopping content that feels real, builds trust, and converts viewers into customers."
     },
     {
       number: "03",
-      title: "Lifestyle Integration",
-      description: "Seamless product placement in real-life scenarios that feel natural and relatable."
+      title: "Product Showcases",
+      description: "High-quality product videos that highlight features and benefits while maintaining a premium aesthetic."
     }
   ]
 
@@ -35,7 +35,7 @@ const Philosophy = () => {
             letterSpacing: '-0.5px'
           }}
         >
-          I believe the best UGC doesn't feel like an ad—it feels like a recommendation from someone you trust. Every video I create is rooted in genuine experience, crafted to stop thumbs mid-scroll, and designed to turn viewers into customers.
+          I believe great content lives at the intersection of cinema and authenticity. Whether it's a brand film or UGC that stops the scroll, every frame should tell a story and every video should drive action.
         </p>
       </motion.div>
 

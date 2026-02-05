@@ -23,8 +23,8 @@ const portfolioItems: PortfolioItem[] = [
   { 
     id: 1, 
     number: "01", 
-    title: "Skincare Routine", 
-    description: "A 60-second authentic review showing real skin results and honest thoughts.",
+    title: "Brand Film", 
+    description: "Cinematic storytelling that captures your brand's essence with professional production and emotional depth.",
     thumbnail: "/portfolio-1.jpg",  // Replace with your thumbnail path (e.g., "/my-video-1-thumb.jpg")
     video: "/portfolio-1.mp4",      // Replace with your video path (e.g., "/my-video-1.mp4")
     span: true // Large item - set to false for smaller items
@@ -32,32 +32,32 @@ const portfolioItems: PortfolioItem[] = [
   { 
     id: 2, 
     number: "02", 
-    title: "Product Unboxing", 
-    description: "First-impression content capturing genuine excitement.",
+    title: "UGC Series", 
+    description: "Authentic, scroll-stopping content that feels genuine and builds trust with your audience.",
     thumbnail: "/portfolio-2.jpg", 
     video: "/portfolio-2.mp4"
   },
   { 
     id: 3, 
     number: "03", 
-    title: "Lifestyle Integration", 
-    description: "Seamless product placement in real-life scenarios.",
+    title: "Product Launch", 
+    description: "Blending cinematic quality with authentic storytelling to showcase your product's story.",
     thumbnail: "/portfolio-3.jpg", 
     video: "/portfolio-3.mp4"
   },
   { 
     id: 4, 
     number: "04", 
-    title: "Tech Review", 
-    description: "Detailed product breakdown with honest pros and cons.",
+    title: "Brand Content", 
+    description: "Professional brand videos that elevate your story with cinematic production values.",
     thumbnail: "/portfolio-4.jpg", 
     video: "/portfolio-4.mp4"
   },
   { 
     id: 5, 
     number: "05", 
-    title: "Travel Gear", 
-    description: "Product showcase in authentic travel settings.",
+    title: "Social Content", 
+    description: "Scroll-stopping UGC that converts viewers while maintaining authentic, relatable energy.",
     thumbnail: "/portfolio-5.jpg", 
     video: "/portfolio-5.mp4",
     span: true // Large item
@@ -65,8 +65,8 @@ const portfolioItems: PortfolioItem[] = [
   { 
     id: 6, 
     number: "06", 
-    title: "Fitness Equipment", 
-    description: "Real workout footage with product integration.",
+    title: "Product Showcase", 
+    description: "High-quality product videos that highlight features with a premium, cinematic aesthetic.",
     thumbnail: "/portfolio-6.jpg", 
     video: "/portfolio-6.mp4"
   },

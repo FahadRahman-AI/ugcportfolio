@@ -18,14 +18,14 @@ const Hero = () => {
               letterSpacing: '-2px'
             }}
           >
-            CONTENT THAT<br />CONVERTS
+            CINEMATIC CONTENT<br />FOR BRANDS
           </h1>
           
           <p 
             className="text-xl font-light text-[#333] leading-[1.6] max-w-[480px] mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            Authentic UGC videos that stop the scroll and drive measurable results for brands who want to stand out.
+            From brand films to scroll-stopping UGC—I create visual stories that captivate audiences and deliver results.
           </p>
 
           <a

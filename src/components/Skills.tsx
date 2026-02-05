@@ -14,7 +14,7 @@ const Skills = () => {
           <div className="w-full aspect-[3/4] bg-gray-200 rounded-2xl mb-12 overflow-hidden">
             <img 
               src="/fahad-rahman.jpg" 
-              alt="Fahad Rahman - UGC Creator" 
+              alt="Fahad Rahman - Cinematic Content Creator" 
               className="w-full h-full object-cover"
               onError={(e) => {
                 e.currentTarget.style.display = 'none'
@@ -23,16 +23,27 @@ const Skills = () => {
           </div>
 
           <nav className="space-y-0">
-            {['What I Bring', 'My Setup', 'Work Together'].map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase().replace(' ', '-')}`}
-                className="block text-[15px] font-normal text-black leading-[2.5] transition-colors duration-200 hover:text-[#D2572F]"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                {link}
-              </a>
-            ))}
+            <a
+              href="#about"
+              className="block text-[15px] font-normal text-black leading-[2.5] transition-colors duration-200 hover:text-[#D2572F]"
+              style={{ fontFamily: 'var(--font-body)' }}
+            >
+              What I Bring
+            </a>
+            <a
+              href="/setup"
+              className="block text-[15px] font-normal text-black leading-[2.5] transition-colors duration-200 hover:text-[#D2572F]"
+              style={{ fontFamily: 'var(--font-body)' }}
+            >
+              My Setup
+            </a>
+            <a
+              href="#packages"
+              className="block text-[15px] font-normal text-black leading-[2.5] transition-colors duration-200 hover:text-[#D2572F]"
+              style={{ fontFamily: 'var(--font-body)' }}
+            >
+              Work Together
+            </a>
           </nav>
         </motion.div>
 
@@ -50,7 +61,7 @@ const Skills = () => {
               letterSpacing: '-0.5px'
             }}
           >
-            I'm a UGC creator who believes authentic content is the key to cutting through the noise. With months creating content and a passion for helping brands connect, I help brands connect with their audience through genuine, relatable videos.
+            I'm a cinematic creator who believes great content lives at the intersection of cinema and authenticity. Whether it's a brand film or UGC that stops the scroll, I help brands connect with their audience through visual storytelling that drives action.
           </p>
 
           <p 

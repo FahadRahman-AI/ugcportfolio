@@ -1,26 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
-import Hero from './components/Hero'
-import Philosophy from './components/Philosophy'
-import Portfolio from './components/Portfolio'
-import Skills from './components/Skills'
-import Testimonials from './components/Testimonials'
-import WorkingTogether from './components/WorkingTogether'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import SetupPage from './pages/SetupPage'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      <Hero />
-      <Philosophy />
-      <Portfolio />
-      <Skills />
-      <Testimonials />
-      <WorkingTogether />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-white">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/setup" element={<SetupPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 
