@@ -84,7 +84,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 2,
     type: 'photo',
     category: 'Photography',
-    title: 'Product Showcase',
+    title: 'Urban showcase',
     description: 'Professional product photography that highlights key features and aesthetic.',
     source: null, // Replace with: project2Photo
     thumbnail: null, // Same as source for photos
@@ -124,7 +124,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 6,
     type: 'photo',
     category: 'Photography',
-    title: 'Lifestyle Integration',
+    title: 'Outdoor captures',
     description: 'Seamless product placement in real-life scenarios.',
     source: null, // Replace with: project6Photo
     thumbnail: null,
@@ -152,12 +152,12 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 9,
-    type: 'video',
+    type: 'photo',
     category: 'Photography',
-    title: 'Behind the Scenes',
+    title: 'Cinematic nightlife',
     description: 'A glimpse into the creative process and production.',
-    source: null, // Replace with: project9Video
-    thumbnail: null, // Replace with: project9Thumb
+    source: null, // Replace with: project9Photo
+    thumbnail: null, // Same as source for photos
     featured: false
   },
   {
@@ -184,7 +184,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: 12,
     type: 'photo',
     category: 'Photography',
-    title: 'Editorial Style',
+    title: 'Cinematic nightlife',
     description: 'Editorial photography with artistic composition.',
     source: null, // Replace with: project12Photo
     thumbnail: null,
