@@ -50,11 +50,11 @@
 // - Keep file under 10MB for good web performance
 // ============================================
 
-// ADD YOUR IMPORTS HERE (uncomment and update with your file names):
-// import urbanShowcase from '../assets/portfolio/photos/urban-showcase.jpg'
-// import outdoorCaptures from '../assets/portfolio/photos/outdoor-captures.jpg'
-// import nightlife1 from '../assets/portfolio/photos/nightlife-1.jpg'
-// import nightlife2 from '../assets/portfolio/photos/nightlife-2.jpg'
+
+ import urbanShowcase from '../assets/portfolio/photos/urban-showcase.jpg'
+ import outdoorCaptures from '../assets/portfolio/photos/outdoor-captures.jpg'
+ import nightlife1 from '../assets/portfolio/photos/nightlife-1.jpg'
+ import nightlife2 from '../assets/portfolio/photos/nightlife-2.jpg'
 
 export interface PortfolioItem {
   id: number
