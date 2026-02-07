@@ -84,8 +84,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Urban showcase',
     description: 'Capturing the energy and character of urban environments through cinematic composition and lighting.',
-    source: null, // ← Change to: urbanShowcase (after importing above)
-    thumbnail: null, // ← Change to: urbanShowcase (same as source for photos)
+    source: urbanShowcase,
+    thumbnail: urbanShowcase,
     featured: true
   },
   {
@@ -124,8 +124,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Outdoor captures',
     description: 'Natural landscapes and outdoor scenes captured with cinematic precision and attention to detail.',
-    source: null, // ← Change to: outdoorCaptures (after importing above)
-    thumbnail: null, // ← Change to: outdoorCaptures (same as source for photos)
+    source: outdoorCaptures,
+    thumbnail: outdoorCaptures,
     featured: false
   },
   {
@@ -154,8 +154,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Cinematic nightlife',
     description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
-    source: null, // ← Change to: nightlife1 (after importing above)
-    thumbnail: null, // ← Change to: nightlife1 (same as source for photos)
+    source: nightlife1,
+    thumbnail: nightlife1,
     featured: false
   },
   {
@@ -184,8 +184,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Photography',
     title: 'Cinematic nightlife',
     description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
-    source: null, // ← Change to: nightlife2 (after importing above)
-    thumbnail: null, // ← Change to: nightlife2 (same as source for photos)
+    source: nightlife2,
+    thumbnail: nightlife2,
     featured: false
   }
 ]
