@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import SetupPage from './pages/SetupPage'
 import ContactPage from './pages/ContactPage'
 import PortfolioPage from './pages/PortfolioPage'
+import ProcessPage from './pages/ProcessPage'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/setup" element={<SetupPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/work" element={<PortfolioPage />} />
+          <Route path="/process" element={<ProcessPage />} />
         </Routes>
       </div>
     </BrowserRouter>

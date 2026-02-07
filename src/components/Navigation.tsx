@@ -9,7 +9,7 @@ const Navigation = () => {
   const projectLinks = [
     { label: 'Work', href: '/work', isHash: false },
     { label: 'About Me', href: '/#about', isHash: true },
-    { label: 'Process', href: '/#process', isHash: true },
+    { label: 'Process', href: '/process', isHash: false },
     { label: 'Packages', href: '/#packages', isHash: true },
     { label: 'Testimonials', href: '/#testimonials', isHash: true },
     { label: 'My Setup', href: '/setup', isHash: false },
