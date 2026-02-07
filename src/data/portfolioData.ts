@@ -51,10 +51,10 @@
 // ============================================
 
 
- import urbanShowcase from '../assets/portfolio/photos/urban-showcase.jpg'
- import outdoorCaptures from '../assets/portfolio/photos/outdoor-captures.jpg'
- import nightlife1 from '../assets/portfolio/photos/nightlife-1.jpg'
- import nightlife2 from '../assets/portfolio/photos/nightlife-2.jpg'
+ import urbanShowcase from '../assets/portfolio/urban-showcase.jpg'
+ import outdoorCaptures from '../assets/portfolio/outdoor-captures.jpg'
+ import nightlife1 from '../assets/portfolio/nightlife-1.jpg'
+ import nightlife2 from '../assets/portfolio/nightlife-2.jpg'
 
 export interface PortfolioItem {
   id: number
