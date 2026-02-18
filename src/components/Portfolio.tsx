@@ -10,6 +10,7 @@ interface PortfolioItem {
   thumbnail: string
   video: string
   span?: boolean // For asymmetric layout
+  comingSoon?: boolean // When true, modal shows "Coming Soon" instead of video
 }
 
 // HOW TO ADD YOUR VIDEOS:
@@ -24,9 +25,9 @@ const portfolioItems: PortfolioItem[] = [
   { 
     id: 1, 
     number: "01", 
-    category: "BRAND",
-    title: "Brand Storytelling", 
-    description: "Cinematic brand films that showcase your story, values, and why audiences should care about your business.",
+    category: "STORYTELLING",
+    title: "Cinematic Storytelling", 
+    description: "Narrative-driven visual stories that capture emotion, atmosphere, and genuine moments through intentional cinematography and editing.",
     thumbnail: "/portfolio-1.jpg",
     video: "/portfolio-1.mp4",
     span: true
@@ -38,7 +39,8 @@ const portfolioItems: PortfolioItem[] = [
     title: "Product Showcases", 
     description: "High-quality product videos that highlight features while maintaining a premium, film-quality aesthetic.",
     thumbnail: "/portfolio-2.jpg", 
-    video: "/portfolio-2.mp4"
+    video: "/portfolio-2.mp4",
+    comingSoon: true
   },
   { 
     id: 3, 
@@ -177,14 +179,25 @@ const Portfolio = () => {
               >
                 ✕
               </button>
-              <video
-                src={selectedVideo.video}
-                controls
-                autoPlay
-                className="w-full h-full rounded-none"
-              >
-                Your browser does not support the video tag.
-              </video>
+              {selectedVideo.comingSoon ? (
+                <div className="w-full aspect-video bg-white/5 border border-white/10 rounded-none flex items-center justify-center min-h-[400px]">
+                  <p 
+                    className="text-[32px] md:text-[24px] font-semibold text-white uppercase tracking-widest"
+                    style={{ fontFamily: 'var(--font-body)' }}
+                  >
+                    Coming Soon
+                  </p>
+                </div>
+              ) : (
+                <video
+                  src={selectedVideo.video}
+                  controls
+                  autoPlay
+                  className="w-full h-full rounded-none"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              )}
             </motion.div>
           </motion.div>
         )}
