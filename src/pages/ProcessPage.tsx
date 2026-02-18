@@ -7,74 +7,74 @@ const ProcessPage = () => {
       id: 1,
       number: "01",
       label: "DISCOVERY",
-      title: "Understanding Your Vision",
-      description: "We start with a conversation about your brand, goals, and target audience. I'll ask about your vision, preferred style, key messages, and success metrics. This ensures we're aligned before the camera starts rolling.",
+      title: "Understanding Your Brand & Goals",
+      description: "We start with a strategy call about your brand, target audience, and business goals. I'll learn what makes you different, who you're trying to reach, and what success looks like. This ensures every frame of content serves your growth objectives.",
       deliverables: [
-        "Brand questionnaire",
-        "Project scope discussion",
-        "Timeline planning",
-        "Budget confirmation"
+        "Brand discovery questionnaire",
+        "Target audience analysis",
+        "Goal-setting & KPIs",
+        "Content strategy recommendations"
       ]
     },
     {
       id: 2,
       number: "02",
       label: "CONCEPT",
-      title: "Crafting the Story",
-      description: "Based on our discussion, I develop a creative concept that aligns with your brand voice and campaign goals. This includes scripting ideas, visual style references, and a content outline for your approval.",
+      title: "Creative Strategy & Planning",
+      description: "I develop a creative concept that aligns with your brand voice and resonates with your target audience. You'll get mood boards, shot list ideas, and a clear direction that balances cinematic quality with content that performs.",
       deliverables: [
-        "Creative brief",
-        "Script/storyboard concepts",
-        "Visual mood board",
-        "Shot list preparation"
+        "Creative brief & concept",
+        "Visual style references",
+        "Script/shot list",
+        "Platform optimization strategy"
       ]
     },
     {
       id: 3,
       number: "03",
       label: "PRODUCTION",
-      title: "Lights, Camera, Action",
-      description: "This is where the magic happens. I handle all aspects of filming—from setup and lighting to directing and capturing authentic moments. Whether it's a narrative short or automotive footage, every shot is intentional and crafted with care.",
+      title: "Professional Filming",
+      description: "This is where your brand comes to life. I handle all aspects of production—lighting, composition, directing—to create cinema-quality content that makes your brand look premium and professional.",
       deliverables: [
         "Professional filming",
-        "Multiple takes/angles",
+        "Multiple angles & takes",
         "B-roll footage",
-        "Audio recording"
+        "High-quality audio"
       ]
     },
     {
       id: 4,
       number: "04",
-      label: "EDITING",
-      title: "Polishing Perfection",
-      description: "I edit your content with attention to pacing, color grading, sound design, and storytelling flow. You'll receive drafts for feedback, and I'll refine until it's exactly what you envisioned—or even better.",
+      label: "POST-PRODUCTION",
+      title: "Editing for Performance",
+      description: "I edit your content with both aesthetics and performance in mind—optimizing pacing for platform algorithms, adding music and sound design, and color grading for maximum impact. You'll review drafts and provide feedback until it's perfect.",
       deliverables: [
         "First draft review",
-        "Revision rounds (2-3 included)",
-        "Color grading",
-        "Sound mixing & music"
+        "2-3 revision rounds",
+        "Color grading & sound design",
+        "Platform-optimized edits"
       ]
     },
     {
       id: 5,
       number: "05",
       label: "DELIVERY",
-      title: "Ready to Launch",
-      description: "Final files are delivered in your preferred formats and aspect ratios—optimized for each platform. You'll get everything you need to launch your content and start seeing results.",
+      title: "Launch & Results",
+      description: "You receive final files in all formats you need (Instagram, TikTok, YouTube, website, etc.) along with posting recommendations. Your content is ready to attract audiences, build presence, and drive real results for your brand.",
       deliverables: [
-        "Multiple formats (16:9, 9:16, 1:1)",
-        "Platform-optimized exports",
-        "Raw footage (if requested)",
-        "Usage rights & licensing"
+        "Multiple format exports",
+        "Posting strategy recommendations",
+        "Thumbnail/cover options",
+        "Usage rights & raw footage"
       ]
     }
   ]
 
   const timelineCards = [
     {
-      days: "1-2",
+      days: "2-3",
       label: "DAYS",
-      description: "Discovery & Concept"
+      description: "Strategy & Concept Development"
     },
     {
       days: "3-5",
@@ -84,7 +84,7 @@ const ProcessPage = () => {
     {
       days: "5-7",
       label: "DAYS",
-      description: "Editing & Delivery"
+      description: "Editing & Revisions"
     }
   ]
 
@@ -119,7 +119,7 @@ const ProcessPage = () => {
             className="text-xl md:text-lg font-light text-[#333] leading-[1.7] mb-20"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            From concept to delivery, here's how I bring your project to life through cinematic content and authentic storytelling.
+            From initial strategy to final delivery, here's how I help brands create cinematic content that attracts audiences, builds presence, and drives real business results.
           </p>
         </motion.div>
       </section>
@@ -264,14 +264,14 @@ const ProcessPage = () => {
             className="text-base font-normal text-[#333] mb-4"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            Total: 10-14 days from start to finish
+            Total: 10-15 days from strategy to final delivery
           </p>
           
           <p 
             className="text-sm font-light text-[#666]"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            Need it faster? Rush delivery available for urgent projects.
+            Need content faster? Rush delivery available for time-sensitive campaigns and launches.
           </p>
         </motion.div>
       </section>
@@ -308,14 +308,21 @@ const ProcessPage = () => {
               className="text-[28px] md:text-[22px] font-normal text-black leading-[1.4] mb-10"
               style={{ fontFamily: 'var(--font-header)' }}
             >
-              I'm not just a content creator—I'm a visual storyteller who brings cinematic quality to every project. Whether it's a single video or a full production, every frame gets the same attention to detail.
+              I'm not just a videographer—I'm a brand growth partner who understands that content needs to do more than look good. It needs to attract the right audience, build your presence, and ultimately help your business grow.
+            </p>
+            
+            <p 
+              className="text-lg font-light text-[#333] leading-[1.7] mb-8"
+              style={{ fontFamily: 'var(--font-body)' }}
+            >
+              You'll get cinema-quality visuals that make your brand look premium, combined with strategic thinking about what content will actually perform and drive results.
             </p>
             
             <p 
               className="text-lg font-light text-[#333] leading-[1.7]"
               style={{ fontFamily: 'var(--font-body)' }}
             >
-              You'll get clear communication at every step, fast turnarounds without sacrificing quality, and content that's designed to move people—not just look pretty.
+              Clear communication at every step. Fast turnarounds without sacrificing quality. And content that's designed to grow your brand—not just fill your feed.
             </p>
           </div>
         </motion.div>
@@ -341,7 +348,7 @@ const ProcessPage = () => {
             className="text-lg font-light text-white/80 leading-[1.7] mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            Let's discuss your project and create something amazing together.
+            Let's create cinematic content that grows your brand.
           </p>
           
           {/* CTA Buttons */}

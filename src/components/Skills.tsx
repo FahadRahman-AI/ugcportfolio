@@ -61,14 +61,14 @@ const Skills = () => {
               letterSpacing: '-0.5px'
             }}
           >
-            I'm a cinematic creator exploring visual storytelling through film. Whether capturing the energy of city streets, the beauty of automotive design, or crafting narrative-driven shorts—every frame is intentional, every story is personal.
+            I'm a cinematic creator who helps brands stand out and grow their audience through film-quality content. In a world of generic posts, premium visuals make brands unforgettable.
           </p>
 
           <p 
             className="text-lg font-light text-[#333] leading-[1.7] max-w-[650px] mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            While I'm building my portfolio and growing as a creator, I bring fresh perspectives, technical skill, and an obsession with creating content that doesn't just look good—it moves people.
+            Whether you need brand films, product showcases, or social content that builds presence—I create cinematic content that attracts your ideal audience and drives real business results. I partner with brands who understand that investing in high-quality content isn't an expense—it's a growth strategy.
           </p>
 
           <a

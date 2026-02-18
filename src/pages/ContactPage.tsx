@@ -35,14 +35,14 @@ const ContactPage = () => {
               letterSpacing: '-1px'
             }}
           >
-            LET'S CREATE<br />SOMETHING GREAT
+            LET'S GROW YOUR<br />BRAND TOGETHER
           </h1>
           
           <p 
             className="text-xl md:text-lg font-light text-[#333] leading-[1.7] mb-16"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            Whether you're looking for cinematic storytelling, automotive content, urban footage, or something in between—I'm here to bring your vision to life.
+            Whether you're launching a product, building your social presence, or telling your brand story through cinema—I'm here to help you attract audiences and stand out. Let's discuss your goals and create a content strategy that actually moves the needle.
           </p>
         </motion.div>
       </section>
@@ -100,7 +100,7 @@ const ContactPage = () => {
                 className="text-sm font-normal text-black"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
-                Usually responds within 24 hours
+                Usually responds within 24 hours with strategy ideas
               </span>
             </div>
           </div>

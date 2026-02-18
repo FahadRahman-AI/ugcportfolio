@@ -24,9 +24,9 @@ const portfolioItems: PortfolioItem[] = [
   { 
     id: 1, 
     number: "01", 
-    category: "STORYTELLING",
-    title: "Cinematic Narrative", 
-    description: "A visual story exploring theme and emotion. Shot with intention, edited for feeling.",
+    category: "BRAND",
+    title: "Brand Storytelling", 
+    description: "Cinematic brand films that showcase your story, values, and why audiences should care about your business.",
     thumbnail: "/portfolio-1.jpg",
     video: "/portfolio-1.mp4",
     span: true
@@ -34,18 +34,18 @@ const portfolioItems: PortfolioItem[] = [
   { 
     id: 2, 
     number: "02", 
-    category: "AUTOMOTIVE",
-    title: "Motion & Speed", 
-    description: "Capturing the beauty of cars in motion through dynamic angles and cinematic composition.",
+    category: "PRODUCT",
+    title: "Product Showcases", 
+    description: "High-quality product videos that highlight features while maintaining a premium, film-quality aesthetic.",
     thumbnail: "/portfolio-2.jpg", 
     video: "/portfolio-2.mp4"
   },
   { 
     id: 3, 
     number: "03", 
-    category: "URBAN",
-    title: "City Atmosphere", 
-    description: "Finding beauty in architecture, streets, and the rhythm of urban life.",
+    category: "SOCIAL",
+    title: "Social Presence Content", 
+    description: "Scroll-stopping social media content that builds your brand's presence and attracts your ideal audience.",
     thumbnail: "/portfolio-3.jpg", 
     video: "/portfolio-3.mp4"
   },
@@ -70,13 +70,13 @@ const Portfolio = () => {
             letterSpacing: '-1px'
           }}
         >
-          MY WORK SPEAKS<br />FOR ITSELF
+          BRAND CONTENT<br />THAT STANDS OUT
         </h2>
         <p 
           className="text-base font-light text-[#666]"
           style={{ fontFamily: 'var(--font-body)' }}
         >
-          Storytelling, automotive, urban—exploring visual narratives
+          Cinematic content that attracts audiences and builds presence
         </p>
       </motion.div>
 

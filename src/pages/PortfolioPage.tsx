@@ -67,14 +67,14 @@ const PortfolioPage = () => {
               letterSpacing: '-1px'
             }}
           >
-            RECENT WORK
+            CONTENT THAT<br />BUILDS BRANDS
           </h1>
           
           <p 
             className="text-xl md:text-lg font-light text-[#333] leading-[1.7]"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            A collection of cinematic storytelling, automotive, urban, and travel content.
+            A collection of cinematic work created to help brands stand out, attract audiences, and build lasting presence. From brand stories to social content—every piece is crafted to perform.
           </p>
         </motion.div>
       </section>
@@ -151,14 +151,14 @@ const PortfolioPage = () => {
             className="text-[56px] md:text-[36px] font-semibold text-white mb-6"
             style={{ fontFamily: 'var(--font-header)' }}
           >
-            LIKE WHAT YOU SEE?
+            READY TO GROW<br />YOUR BRAND?
           </h2>
           
           <p 
             className="text-lg font-light text-white/80 leading-[1.7] mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            Let's create something amazing together. Get in touch and let's discuss your project.
+            Let's create cinematic content that attracts your ideal audience, builds your presence, and makes your brand impossible to ignore.
           </p>
           
           <div className="flex justify-center gap-4 flex-wrap">

@@ -4,18 +4,21 @@ const Philosophy = () => {
   const services = [
     {
       number: "01",
-      title: "Cinematic Storytelling",
-      description: "Narrative-driven video content that captures emotion, atmosphere, and genuine human moments through intentional cinematography."
+      title: "Brand Films & Stories",
+      description: "Cinematic brand videos that showcase your mission, products, and values. The kind of content that builds emotional connection with your audience and makes your brand unforgettable.",
+      perfectFor: ["Brand launches", "Company stories", "Product releases", "Building credibility"]
     },
     {
       number: "02",
-      title: "Automotive Content",
-      description: "Dynamic car videos showcasing design, motion, and lifestyle through creative angles and professional production quality."
+      title: "Social Media Presence",
+      description: "Scroll-stopping content optimized for Instagram, TikTok, and YouTube. High-quality visuals that make your brand stand out in the feed and attract your ideal customers.",
+      perfectFor: ["Growing your following", "Launching campaigns", "Building brand awareness", "Driving traffic"]
     },
     {
       number: "03",
-      title: "Urban & Travel",
-      description: "Location-based content capturing the essence of places—from city architecture to travel destinations—with cinematic flair."
+      title: "Product & Lifestyle Content",
+      description: "Showcase your products or services with cinematic quality. From e-commerce to lifestyle brands, I create visuals that highlight what makes you different and drive sales.",
+      perfectFor: ["E-commerce brands", "Service businesses", "Lifestyle products", "Premium positioning"]
     }
   ]
 
@@ -35,7 +38,7 @@ const Philosophy = () => {
             letterSpacing: '-0.5px'
           }}
         >
-          I'm a cinematic creator exploring visual storytelling through film. Whether capturing the energy of city streets, the beauty of automotive design, or crafting narrative-driven shorts—every frame is intentional, every story is personal.
+          In a sea of generic content, brands need to stand out. That's where cinema-quality visuals come in. Whether it's a brand story, product showcase, or social content that builds your presence—I create the kind of content that makes people stop, watch, and remember your brand. Every frame is crafted to attract your audience and elevate your image. My diverse range (narratives, lifestyle, urban, atmospheric) means I can adapt to any brand's voice while maintaining the cinematic quality that makes content perform.
         </p>
       </motion.div>
 
@@ -74,11 +77,29 @@ const Philosophy = () => {
                 {service.title}
               </h3>
               <p 
-                className="text-base font-light text-[#666] leading-[1.7] max-w-[300px]"
+                className="text-base font-light text-[#666] leading-[1.7] max-w-[300px] mb-6"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
                 {service.description}
               </p>
+              {service.perfectFor && (
+                <div className="text-left max-w-[300px] mx-auto md:mx-0">
+                  <p 
+                    className="text-[13px] font-normal text-[#999] mb-3"
+                    style={{ fontFamily: 'var(--font-body)' }}
+                  >
+                    Perfect for:
+                  </p>
+                  <ul className="space-y-1.5">
+                    {service.perfectFor.map((item, i) => (
+                      <li key={i} className="flex items-center gap-2 text-[14px] font-light text-[#666]" style={{ fontFamily: 'var(--font-body)' }}>
+                        <span className="text-[#D2572F]">✓</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

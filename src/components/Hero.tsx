@@ -18,14 +18,14 @@ const Hero = () => {
               letterSpacing: '-2px'
             }}
           >
-            CINEMATIC CONTENT<br />THAT MOVES
+            BUILD YOUR BRAND<br />THROUGH CINEMA
           </h1>
           
           <p 
             className="text-xl font-light text-[#333] leading-[1.6] max-w-[480px] mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            From narrative shorts to automotive and urban content—I create visual stories that captivate and move audiences.
+            Cinematic content that makes your brand unforgettable. I help businesses attract audiences and build lasting presence through film-quality visuals that stand out.
           </p>
 
           <a

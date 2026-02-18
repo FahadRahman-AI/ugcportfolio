@@ -60,7 +60,7 @@ const Navigation = () => {
           className="text-[15px] font-light text-[#666] leading-[1.7] max-w-[220px] mb-20"
           style={{ fontFamily: 'var(--font-body)' }}
         >
-          Cinematic creator specializing in brand content, UGC, and visual storytelling for ambitious brands.
+          Cinematic creator helping brands grow their audience through standout visual content. From Pakistan to the world.
         </p>
 
         {/* Projects Section */}
@@ -201,7 +201,7 @@ const Navigation = () => {
                 className="text-[15px] font-light text-[#666] leading-[1.7]"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
-                Cinematic creator specializing in brand content, UGC, and visual storytelling for ambitious brands.
+                Cinematic creator helping brands grow their audience through standout visual content. From Pakistan to the world.
               </p>
 
               {/* Projects */}

@@ -238,9 +238,9 @@ const SetupPage = () => {
             className="text-lg font-light text-white/80 leading-[1.8] mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            This setup is intentionally lean. Instead of getting lost in endless gear upgrades, I've mastered these four tools. The result? Faster workflows, more creative freedom, and consistent quality across every project.
+            For brand clients, this lean setup means faster turnaround times and lower costs—without sacrificing the cinema-quality you need to stand out. I'm not bogged down by complex gear; I'm focused on creating content that grows your brand.
             <br /><br />
-            Great content comes from vision and execution—not from having the most expensive equipment.
+            This setup is intentionally lean. Instead of getting lost in endless gear upgrades, I've mastered these four tools. The result? Faster workflows, more creative freedom, and consistent quality across every project. Great content comes from vision and execution—not from having the most expensive equipment.
           </p>
           
           <Link

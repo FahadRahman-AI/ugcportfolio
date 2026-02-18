@@ -1,44 +1,58 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const packages = [
   {
-    name: "Single Video",
-    description: "Perfect for testing my style",
-    price: "150",
+    name: "Brand Starter",
+    description: "Perfect for testing cinematic content",
+    price: "300",
     priceLabel: "Starting at",
     features: [
       "1 cinematic video (30-90s)",
-      "2 revisions included",
-      "5-7 day delivery",
-      "Multiple format exports",
+      "Concept consultation",
+      "Professional filming & editing",
+      "2 revision rounds",
+      "Multiple format exports (16:9, 9:16, 1:1)",
+      "5-7 day turnaround"
     ],
+    perfectFor: ["Product launches", "Brand introductions", "Social media campaigns"],
+    buttonText: "Get Started",
     featured: false,
   },
   {
-    name: "Content Bundle",
-    description: "Multiple videos, cohesive style",
-    price: "350",
+    name: "Brand Growth",
+    description: "Build consistent presence",
+    price: "800",
     priceLabel: "Starting at",
     features: [
-      "3 cinematic videos",
-      "Mix of styles/subjects",
-      "3 revisions each",
-      "10-14 day delivery",
-      "Raw footage included",
+      "3-5 cinematic videos",
+      "Content strategy consultation",
+      "Mix of brand/product/social content",
+      "Optimized for platform performance",
+      "3 revision rounds per video",
+      "10-14 day turnaround",
+      "Raw footage included"
     ],
+    perfectFor: ["Growing social presence", "Multi-platform campaigns", "Building brand awareness"],
+    buttonText: "Most Popular",
     featured: true,
   },
   {
-    name: "Full Production",
-    description: "Complete creative collaboration",
+    name: "Brand Partnership",
+    description: "Ongoing content creation",
     price: "Custom",
     priceLabel: null,
     features: [
-      "5+ videos with concept development",
-      "Location scouting",
-      "Professional post-production",
-      "Ongoing creative partnership",
+      "5-10+ videos per month",
+      "Full creative strategy",
+      "Concept development & planning",
+      "Priority turnaround",
+      "Dedicated creative partnership",
+      "Analytics & performance tracking",
+      "Unlimited revisions"
     ],
+    perfectFor: ["Established brands", "Long-term growth", "Consistent content pipeline"],
+    buttonText: "Partner With Me",
     featured: false,
   },
 ]
@@ -66,7 +80,7 @@ const WorkingTogether = () => {
           className="text-base font-light text-[#666]"
           style={{ fontFamily: 'var(--font-body)' }}
         >
-          Choose the package that fits your needs
+          Choose the package that fits your brand
         </p>
       </motion.div>
 
@@ -106,18 +120,24 @@ const WorkingTogether = () => {
             </h3>
             
             <p 
-              className="text-sm font-light text-[#666] mb-8"
+              className="text-sm font-light text-[#666] mb-6"
               style={{ fontFamily: 'var(--font-body)' }}
             >
               {pkg.description}
             </p>
 
-            <ul className="space-y-4 mb-10 text-left">
+            <p 
+              className="text-[13px] font-normal text-[#999] mb-2 text-left"
+              style={{ fontFamily: 'var(--font-body)' }}
+            >
+              What You Get:
+            </p>
+            <ul className="space-y-3 mb-6 text-left">
               {pkg.features.map((feature, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-[#D2572F] mt-1">✓</span>
+                  <span className="text-[#D2572F] mt-0.5">✓</span>
                   <span 
-                    className="text-[15px] font-light text-[#333] leading-[2]"
+                    className="text-[15px] font-light text-[#333] leading-[1.6]"
                     style={{ fontFamily: 'var(--font-body)' }}
                   >
                     {feature}
@@ -126,18 +146,39 @@ const WorkingTogether = () => {
               ))}
             </ul>
 
+            {pkg.perfectFor && (
+              <>
+                <p 
+                  className="text-[13px] font-normal text-[#999] mb-2 text-left"
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  Perfect For:
+                </p>
+                <ul className="space-y-1 mb-8 text-left">
+                  {pkg.perfectFor.map((item, i) => (
+                    <li key={i} className="flex items-center gap-2 text-[14px] font-light text-[#666]" style={{ fontFamily: 'var(--font-body)' }}>
+                      <span className="text-[#D2572F]">•</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {!pkg.perfectFor && <div className="mb-8" />}
+
             <div className="mb-8">
               {pkg.price === "Custom" ? (
                 <p 
                   className="text-[48px] font-semibold text-black"
                   style={{ fontFamily: 'var(--font-header)' }}
                 >
-                  Custom — Let's Discuss
+                  Custom — Let's Talk
                 </p>
               ) : (
                 <>
                   <span 
-                    className="text-sm tracking-wide text-[#666]"
+                    className="text-sm tracking-wide text-[#666] block"
                     style={{ fontFamily: 'var(--font-body)' }}
                   >
                     {pkg.priceLabel}
@@ -152,19 +193,46 @@ const WorkingTogether = () => {
               )}
             </div>
 
-            <button className="btn-secondary">
-              Get Started
-            </button>
+            <Link
+              to="/contact"
+              className="btn-secondary inline-block"
+            >
+              {pkg.buttonText}
+            </Link>
           </motion.div>
         ))}
       </div>
 
-      <p 
-        className="text-sm font-light text-[#666] text-center mt-8 italic max-w-[600px] mx-auto"
-        style={{ fontFamily: 'var(--font-body)' }}
+      {/* Not Sure Which Package? */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="bg-[#FAFAFA] py-20 md:py-16 px-20 md:px-6 mt-20 text-center -mx-20 md:-mx-6"
       >
-        Building my portfolio? I'm open to creative collaborations and passion projects. Let's talk about your vision.
-      </p>
+        <h3 
+          className="text-[32px] font-semibold text-black mb-4"
+          style={{ fontFamily: 'var(--font-header)' }}
+        >
+          Not Sure Which Package?
+        </h3>
+        <p 
+          className="text-base font-light text-[#333] leading-[1.7] max-w-[600px] mx-auto mb-8"
+          style={{ fontFamily: 'var(--font-body)' }}
+        >
+          Every brand is different. Let's hop on a call and figure out exactly what content will help you grow your audience and achieve your goals.
+        </p>
+        <Link
+          to="/contact"
+          className="btn-primary inline-block"
+        >
+          Schedule a Free Call
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-2">
+            <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </Link>
+      </motion.div>
     </section>
   )
 }
