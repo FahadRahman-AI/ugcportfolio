@@ -34,7 +34,7 @@ const ProcessPage = () => {
       number: "03",
       label: "PRODUCTION",
       title: "Lights, Camera, Action",
-      description: "This is where the magic happens. I handle all aspects of filming—from setup and lighting to directing and capturing authentic moments. Whether it's cinematic brand content or genuine UGC, every shot is intentional and on-brand.",
+      description: "This is where the magic happens. I handle all aspects of filming—from setup and lighting to directing and capturing authentic moments. Whether it's a narrative short or automotive footage, every shot is intentional and crafted with care.",
       deliverables: [
         "Professional filming",
         "Multiple takes/angles",
@@ -119,7 +119,7 @@ const ProcessPage = () => {
             className="text-xl md:text-lg font-light text-[#333] leading-[1.7] mb-20"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            From concept to delivery, here's how I bring your brand story to life through cinematic content and authentic storytelling.
+            From concept to delivery, here's how I bring your project to life through cinematic content and authentic storytelling.
           </p>
         </motion.div>
       </section>
@@ -308,14 +308,14 @@ const ProcessPage = () => {
               className="text-[28px] md:text-[22px] font-normal text-black leading-[1.4] mb-10"
               style={{ fontFamily: 'var(--font-header)' }}
             >
-              I'm not just a content creator—I'm a visual storyteller who understands the intersection of cinema and conversion. Every project gets the same attention to detail, whether it's a $200 UGC video or a $5000 brand film.
+              I'm not just a content creator—I'm a visual storyteller who brings cinematic quality to every project. Whether it's a single video or a full production, every frame gets the same attention to detail.
             </p>
             
             <p 
               className="text-lg font-light text-[#333] leading-[1.7]"
               style={{ fontFamily: 'var(--font-body)' }}
             >
-              You'll get clear communication at every step, fast turnarounds without sacrificing quality, and content that's designed to perform—not just look pretty.
+              You'll get clear communication at every step, fast turnarounds without sacrificing quality, and content that's designed to move people—not just look pretty.
             </p>
           </div>
         </motion.div>

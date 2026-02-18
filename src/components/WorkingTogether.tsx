@@ -2,38 +2,42 @@ import { motion } from 'framer-motion'
 
 const packages = [
   {
-    name: "Starter",
-    description: "Perfect for testing content styles",
-    price: "200",
+    name: "Single Video",
+    description: "Perfect for testing my style",
+    price: "150",
+    priceLabel: "Starting at",
     features: [
-      "1 video (UGC or cinematic style)",
+      "1 cinematic video (30-90s)",
       "2 revisions included",
-      "48-hour delivery",
-      "Raw file included",
+      "5-7 day delivery",
+      "Multiple format exports",
     ],
     featured: false,
   },
   {
-    name: "Growth",
-    description: "Versatile content for multiple platforms",
-    price: "500",
+    name: "Content Bundle",
+    description: "Multiple videos, cohesive style",
+    price: "350",
+    priceLabel: "Starting at",
     features: [
-      "Mix of UGC and brand content",
+      "3 cinematic videos",
+      "Mix of styles/subjects",
       "3 revisions each",
-      "5-day delivery",
-      "Hook variations included",
+      "10-14 day delivery",
+      "Raw footage included",
     ],
     featured: true,
   },
   {
-    name: "Premium",
-    description: "Full creative production",
+    name: "Full Production",
+    description: "Complete creative collaboration",
     price: "Custom",
+    priceLabel: null,
     features: [
-      "Cinematic + UGC styles",
-      "Concept development",
-      "Priority delivery",
-      "Ongoing collaboration",
+      "5+ videos with concept development",
+      "Location scouting",
+      "Professional post-production",
+      "Ongoing creative partnership",
     ],
     featured: false,
   },
@@ -128,7 +132,7 @@ const WorkingTogether = () => {
                   className="text-[48px] font-semibold text-black"
                   style={{ fontFamily: 'var(--font-header)' }}
                 >
-                  {pkg.price}
+                  Custom — Let's Discuss
                 </p>
               ) : (
                 <>
@@ -136,7 +140,7 @@ const WorkingTogether = () => {
                     className="text-sm tracking-wide text-[#666]"
                     style={{ fontFamily: 'var(--font-body)' }}
                   >
-                    Starting at
+                    {pkg.priceLabel}
                   </span>
                   <p 
                     className="text-[48px] font-semibold text-black"
@@ -154,6 +158,13 @@ const WorkingTogether = () => {
           </motion.div>
         ))}
       </div>
+
+      <p 
+        className="text-sm font-light text-[#666] text-center mt-8 italic max-w-[600px] mx-auto"
+        style={{ fontFamily: 'var(--font-body)' }}
+      >
+        Building my portfolio? I'm open to creative collaborations and passion projects. Let's talk about your vision.
+      </p>
     </section>
   )
 }

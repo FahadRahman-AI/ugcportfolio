@@ -51,143 +51,80 @@
 // ============================================
 
 
- import urbanShowcase from '../assets/portfolio/urban-showcase.jpg'
- import outdoorCaptures from '../assets/portfolio/outdoor-captures.jpg'
- import nightlife1 from '../assets/portfolio/nightlife-1.jpg'
- import nightlife2 from '../assets/portfolio/nightlife-2.jpg'
+export type PortfolioCategory = 'Storytelling' | 'Automotive' | 'Urban' | 'Travel'
 
 export interface PortfolioItem {
   id: number
   type: 'photo' | 'video'
-  category: 'Brand Film' | 'UGC Content' | 'Photography'
+  category: PortfolioCategory
   title: string
   description: string
-  source: string | null // Photo URL or video URL
-  thumbnail: string | null // Thumbnail for videos, same as source for photos
-  featured?: boolean // Highlight certain pieces
+  source: string | null
+  thumbnail: string | null
+  featured?: boolean
 }
 
 export const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
     type: 'video',
-    category: 'Brand Film',
-    title: 'Cinematic Brand Story',
-    description: 'A cinematic brand film showcasing the essence of the product through visual storytelling.',
-    source: null, // Replace with: project1Video
-    thumbnail: null, // Replace with: project1Thumb
+    category: 'Storytelling',
+    title: 'Narrative Short Film',
+    description: 'A cinematic piece exploring human emotion and visual storytelling.',
+    source: null,
+    thumbnail: null,
     featured: true
   },
   {
     id: 2,
-    type: 'photo',
-    category: 'Photography',
-    title: 'Urban showcase',
-    description: 'Capturing the energy and character of urban environments through cinematic composition and lighting.',
-    source: urbanShowcase,
-    thumbnail: urbanShowcase,
+    type: 'video',
+    category: 'Automotive',
+    title: 'Car Showcase',
+    description: 'Dynamic shots capturing speed, design, and automotive beauty.',
+    source: null,
+    thumbnail: null,
     featured: true
   },
   {
     id: 3,
     type: 'video',
-    category: 'UGC Content',
-    title: 'Authentic Review',
-    description: 'Scroll-stopping UGC content that feels genuine and builds trust.',
-    source: null, // Replace with: project3Video
-    thumbnail: null, // Replace with: project3Thumb
+    category: 'Urban',
+    title: 'City Vibes',
+    description: 'Urban exploration showcasing architecture and atmosphere.',
+    source: null,
+    thumbnail: null,
     featured: false
   },
   {
     id: 4,
-    type: 'photo',
-    category: 'Brand Film',
-    title: 'Brand Campaign',
-    description: 'Visual campaign that captures brand identity and messaging.',
-    source: null, // Replace with: project4Photo
+    type: 'video',
+    category: 'Travel',
+    title: 'Exploration Series',
+    description: 'Documenting places, moments, and the journey itself.',
+    source: null,
     thumbnail: null,
     featured: false
   },
   {
     id: 5,
     type: 'video',
-    category: 'UGC Content',
-    title: 'Product Unboxing',
-    description: 'First-impression content that captures genuine excitement.',
-    source: null, // Replace with: project5Video
-    thumbnail: null, // Replace with: project5Thumb
+    category: 'Automotive',
+    title: 'Motion Study',
+    description: 'Another automotive piece with different style and approach.',
+    source: null,
+    thumbnail: null,
     featured: false
   },
   {
     id: 6,
-    type: 'photo',
-    category: 'Photography',
-    title: 'Outdoor captures',
-    description: 'Natural landscapes and outdoor scenes captured with cinematic precision and attention to detail.',
-    source: outdoorCaptures,
-    thumbnail: outdoorCaptures,
-    featured: false
-  },
-  {
-    id: 7,
     type: 'video',
-    category: 'Brand Film',
-    title: 'Corporate Video',
-    description: 'Professional brand content with cinematic production quality.',
-    source: null, // Replace with: project7Video
-    thumbnail: null, // Replace with: project7Thumb
-    featured: false
-  },
-  {
-    id: 8,
-    type: 'photo',
-    category: 'UGC Content',
-    title: 'Social Media Content',
-    description: 'Authentic content designed for social platforms.',
-    source: null, // Replace with: project8Photo
+    category: 'Storytelling',
+    title: 'Visual Essay',
+    description: 'A cinematic study in composition, light, and narrative.',
+    source: null,
     thumbnail: null,
-    featured: false
-  },
-  {
-    id: 9,
-    type: 'photo',
-    category: 'Photography',
-    title: 'Cinematic nightlife',
-    description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
-    source: nightlife1,
-    thumbnail: nightlife1,
-    featured: false
-  },
-  {
-    id: 10,
-    type: 'photo',
-    category: 'Brand Film',
-    title: 'Campaign Visuals',
-    description: 'High-quality visuals for brand marketing campaigns.',
-    source: null, // Replace with: project10Photo
-    thumbnail: null,
-    featured: false
-  },
-  {
-    id: 11,
-    type: 'video',
-    category: 'UGC Content',
-    title: 'User Testimonial',
-    description: 'Real user experience captured authentically.',
-    source: null, // Replace with: project11Video
-    thumbnail: null, // Replace with: project11Thumb
-    featured: false
-  },
-  {
-    id: 12,
-    type: 'photo',
-    category: 'Photography',
-    title: 'Cinematic nightlife',
-    description: 'Vibrant nightlife scenes brought to life with dramatic lighting and cinematic storytelling.',
-    source: nightlife2,
-    thumbnail: nightlife2,
     featured: false
   }
 ]
 
-export const categories = ['All Work', 'Brand Film', 'UGC Content', 'Photography'] as const
+export const categories = ['All Work', 'Storytelling', 'Automotive', 'Urban', 'Travel'] as const

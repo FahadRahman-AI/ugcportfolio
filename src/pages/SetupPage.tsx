@@ -41,7 +41,7 @@ const gearItems: GearItem[] = [
     id: 1,
     category: "CAMERA",
     name: "Sony A7 IV",
-    description: "Full-frame mirrorless powerhouse that delivers stunning 4K footage with incredible low-light performance. Perfect for both cinematic brand content and authentic UGC-style videos.",
+    description: "Full-frame mirrorless powerhouse that delivers stunning 4K footage with incredible low-light performance. Perfect for cinematic storytelling, automotive, and urban content.",
     specs: [
       "33MP full-frame sensor",
       "4K 60fps video",
@@ -55,7 +55,7 @@ const gearItems: GearItem[] = [
     id: 2,
     category: "PHONE",
     name: "iPhone 13",
-    description: "My secret weapon for authentic UGC. The best content doesn't always need the best camera—it needs to feel real. The iPhone delivers that authenticity while maintaining broadcast quality.",
+    description: "My secret weapon for authentic moments. The best content doesn't always need the best camera—it needs to feel real. The iPhone delivers that authenticity while maintaining broadcast quality.",
     specs: [
       "Cinematic mode",
       "4K Dolby Vision HDR",

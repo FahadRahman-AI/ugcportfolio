@@ -46,7 +46,7 @@ const Footer = () => {
               className="text-sm font-light text-white/60"
               style={{ fontFamily: 'var(--font-body)' }}
             >
-              Creating cinematic stories that move audiences
+              Visual storyteller. Cinematic creator.
             </p>
           </motion.div>
 

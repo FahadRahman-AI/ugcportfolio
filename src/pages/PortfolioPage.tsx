@@ -74,7 +74,7 @@ const PortfolioPage = () => {
             className="text-xl md:text-lg font-light text-[#333] leading-[1.7]"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            A collection of cinematic content, brand stories, and authentic UGC that drives results.
+            A collection of cinematic storytelling, automotive, urban, and travel content.
           </p>
         </motion.div>
       </section>

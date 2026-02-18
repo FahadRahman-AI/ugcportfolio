@@ -42,7 +42,7 @@ const ContactPage = () => {
             className="text-xl md:text-lg font-light text-[#333] leading-[1.7] mb-16"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            Whether you're looking for cinematic brand content, authentic UGC, or something in between—I'm here to bring your vision to life.
+            Whether you're looking for cinematic storytelling, automotive content, urban footage, or something in between—I'm here to bring your vision to life.
           </p>
         </motion.div>
       </section>

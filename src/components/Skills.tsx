@@ -61,21 +61,14 @@ const Skills = () => {
               letterSpacing: '-0.5px'
             }}
           >
-            I'm a cinematic creator who believes great content lives at the intersection of cinema and authenticity. Whether it's a brand film or UGC that stops the scroll, I help brands connect with their audience through visual storytelling that drives action.
+            I'm a cinematic creator exploring visual storytelling through film. Whether capturing the energy of city streets, the beauty of automotive design, or crafting narrative-driven shorts—every frame is intentional, every story is personal.
           </p>
 
           <p 
             className="text-lg font-light text-[#333] leading-[1.7] max-w-[650px] mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            While I'm building my portfolio, I bring fresh perspectives, quick turnaround times, and an obsession with creating content that actually converts.
-          </p>
-
-          <p 
-            className="text-lg font-light text-[#333] leading-[1.7] max-w-[650px] mb-12"
-            style={{ fontFamily: 'var(--font-body)' }}
-          >
-            From hook to CTA, I focus on creating content that doesn't just look good—it performs. Every frame is intentional, every word is crafted to drive action.
+            While I'm building my portfolio and growing as a creator, I bring fresh perspectives, technical skill, and an obsession with creating content that doesn't just look good—it moves people.
           </p>
 
           <a

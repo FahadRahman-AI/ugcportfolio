@@ -4,6 +4,7 @@ import { useState } from 'react'
 interface PortfolioItem {
   id: number
   number: string
+  category: string
   title: string
   description: string
   thumbnail: string
@@ -23,52 +24,30 @@ const portfolioItems: PortfolioItem[] = [
   { 
     id: 1, 
     number: "01", 
-    title: "Brand Film", 
-    description: "Cinematic storytelling that captures your brand's essence with professional production and emotional depth.",
-    thumbnail: "/portfolio-1.jpg",  // Replace with your thumbnail path (e.g., "/my-video-1-thumb.jpg")
-    video: "/portfolio-1.mp4",      // Replace with your video path (e.g., "/my-video-1.mp4")
-    span: true // Large item - set to false for smaller items
+    category: "STORYTELLING",
+    title: "Cinematic Narrative", 
+    description: "A visual story exploring theme and emotion. Shot with intention, edited for feeling.",
+    thumbnail: "/portfolio-1.jpg",
+    video: "/portfolio-1.mp4",
+    span: true
   },
   { 
     id: 2, 
     number: "02", 
-    title: "UGC Series", 
-    description: "Authentic, scroll-stopping content that feels genuine and builds trust with your audience.",
+    category: "AUTOMOTIVE",
+    title: "Motion & Speed", 
+    description: "Capturing the beauty of cars in motion through dynamic angles and cinematic composition.",
     thumbnail: "/portfolio-2.jpg", 
     video: "/portfolio-2.mp4"
   },
   { 
     id: 3, 
     number: "03", 
-    title: "Product Launch", 
-    description: "Blending cinematic quality with authentic storytelling to showcase your product's story.",
+    category: "URBAN",
+    title: "City Atmosphere", 
+    description: "Finding beauty in architecture, streets, and the rhythm of urban life.",
     thumbnail: "/portfolio-3.jpg", 
     video: "/portfolio-3.mp4"
-  },
-  { 
-    id: 4, 
-    number: "04", 
-    title: "Brand Content", 
-    description: "Professional brand videos that elevate your story with cinematic production values.",
-    thumbnail: "/portfolio-4.jpg", 
-    video: "/portfolio-4.mp4"
-  },
-  { 
-    id: 5, 
-    number: "05", 
-    title: "Social Content", 
-    description: "Scroll-stopping UGC that converts viewers while maintaining authentic, relatable energy.",
-    thumbnail: "/portfolio-5.jpg", 
-    video: "/portfolio-5.mp4",
-    span: true // Large item
-  },
-  { 
-    id: 6, 
-    number: "06", 
-    title: "Product Showcase", 
-    description: "High-quality product videos that highlight features with a premium, cinematic aesthetic.",
-    thumbnail: "/portfolio-6.jpg", 
-    video: "/portfolio-6.mp4"
   },
 ]
 
@@ -97,7 +76,7 @@ const Portfolio = () => {
           className="text-base font-light text-[#666]"
           style={{ fontFamily: 'var(--font-body)' }}
         >
-          Sample content showing versatility and results
+          Storytelling, automotive, urban—exploring visual narratives
         </p>
       </motion.div>
 
@@ -127,6 +106,12 @@ const Portfolio = () => {
                   </p>
                   
                   <div>
+                    <p 
+                      className="text-[10px] uppercase tracking-widest text-[#D2572F] font-semibold mb-2"
+                      style={{ fontFamily: 'var(--font-body)' }}
+                    >
+                      {item.category}
+                    </p>
                     <h3 
                       className="text-[32px] font-semibold text-white mb-4"
                       style={{ fontFamily: 'var(--font-header)' }}

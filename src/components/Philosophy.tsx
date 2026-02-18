@@ -4,18 +4,18 @@ const Philosophy = () => {
   const services = [
     {
       number: "01",
-      title: "Brand Content",
-      description: "Cinematic videos that showcase your brand story with professional production quality and emotional impact."
+      title: "Cinematic Storytelling",
+      description: "Narrative-driven video content that captures emotion, atmosphere, and genuine human moments through intentional cinematography."
     },
     {
       number: "02",
-      title: "UGC & Social",
-      description: "Authentic, scroll-stopping content that feels real, builds trust, and converts viewers into customers."
+      title: "Automotive Content",
+      description: "Dynamic car videos showcasing design, motion, and lifestyle through creative angles and professional production quality."
     },
     {
       number: "03",
-      title: "Product Showcases",
-      description: "High-quality product videos that highlight features and benefits while maintaining a premium aesthetic."
+      title: "Urban & Travel",
+      description: "Location-based content capturing the essence of places—from city architecture to travel destinations—with cinematic flair."
     }
   ]
 
@@ -35,7 +35,7 @@ const Philosophy = () => {
             letterSpacing: '-0.5px'
           }}
         >
-          I believe great content lives at the intersection of cinema and authenticity. Whether it's a brand film or UGC that stops the scroll, every frame should tell a story and every video should drive action.
+          I'm a cinematic creator exploring visual storytelling through film. Whether capturing the energy of city streets, the beauty of automotive design, or crafting narrative-driven shorts—every frame is intentional, every story is personal.
         </p>
       </motion.div>
 
